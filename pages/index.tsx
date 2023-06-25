@@ -22,7 +22,7 @@ export default function Home() {
           </h1>
           <p className="lg:text-left text-center mb-5">
             A wonderful🤩 game that allows you to have 💫FUN💫 with capybaras.
-            Express yourself to Capy! Don't be shy!
+            Express yourself to Capy! Don&apos;t be shy!
           </p>
           <Link href="/checkout">
             <div className="lg:block lg:mx-0 lg:mt-8 hidden relative cursor-pointer bg-[#bc9364] text-white w-max rounded-full py-2 px-20 mx-auto text-sm">
@@ -84,7 +84,7 @@ export default function Home() {
             </div>
             <h3 className="text-xl font-medium mb-3">Capys are cool</h3>
             <p className="">
-              You can't tell me that capys aren't cool cuz they are!
+              You can&apos;t tell me that capys aren&apos;t cool cuz they are!
             </p>
           </div>
           <div className="mx-auto text-center">
@@ -113,16 +113,20 @@ export default function Home() {
             <div className="text-7xl mb-5">
               <Image alt="" src="/imgs/ps5-capy.png" width={700} height={700} />
             </div>
-            <h3 className="text-xl font-medium mb-3">On PS5! (We're not)</h3>
+            <h3 className="text-xl font-medium mb-3">
+              On PS5! (We&apos;re not)
+            </h3>
             <p className="">
-              Cool right? We're also on PS5! (Just download it on pc)
+              Cool right? We&apos;re also on PS5! (Just download it on pc)
             </p>
           </div>
           <div className="mx-auto text-center">
             <div className="text-7xl mb-5">
               <Image alt="" src="/imgs/ps4-capy.png" width={700} height={700} />
             </div>
-            <h3 className="text-xl font-medium mb-3">On PS4! (We're not)</h3>
+            <h3 className="text-xl font-medium mb-3">
+              On PS4! (We&apos;re not)
+            </h3>
             <p className="">
               And the OG one, the PS4! (Just download it on pc)
             </p>
@@ -137,9 +141,11 @@ export default function Home() {
               />
             </div>
             <h3 className="text-xl font-medium mb-3 -mt-5">
-              On XBOX! (We're not)
+              On XBOX! (We&apos;re not)
             </h3>
-            <p className="">Also on XBOX, y'all! (Just download it on pc)</p>
+            <p className="">
+              Also on XBOX, y&apos;all! (Just download it on pc)
+            </p>
           </div>
         </div>
       </div>
