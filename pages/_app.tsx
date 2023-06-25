@@ -24,34 +24,38 @@ export default function App({ Component, pageProps }: AppProps) {
           >
             <FontAwesomeIcon icon={faXmark} />
           </div>
-          <ul className="grid grid-rows-3 h-full w-full place-items-center">
+          <ul className="grid grid-rows-2 h-full w-full place-items-center">
             <li>
-              <Link href="/">Home🥱</Link>
+              <Link href="/" onClick={() => setMobileNavOpened(false)}>
+                Home🥱
+              </Link>
             </li>
             <li>
-              <Link href="/about">About😎</Link>
-            </li>
-            <li>
-              <Link href="/product">Product🤝</Link>
+              <Link href="/about" onClick={() => setMobileNavOpened(false)}>
+                About😎
+              </Link>
             </li>
           </ul>
         </div>
         <div className="lg:px-20 relative w-full border-b flex justify-between px-8 items-center border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          <div className="text-lg font-medium flex">
-            <div className="w-7 h-7 mr-2 -mt-0.5">
-              <Image alt="" src={logo} />
+          <Link href="/">
+            <div className="text-lg font-medium flex">
+              <div className="w-7 h-7 mr-2 -mt-0.5">
+                <Image alt="" src={logo} />
+              </div>
+              CAPYIsNotStupid
             </div>
-            CAPYIsNotStupid
-          </div>
+          </Link>
           <ul className="lg:flex hidden absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 items-center h-full w-full justify-center">
             <li className="hover:animate-shake mr-8">
-              <Link href="/">Home🥱</Link>
+              <Link href="/" onClick={() => setMobileNavOpened(false)}>
+                Home🥱
+              </Link>
             </li>
             <li className="hover:animate-shake mr-8">
-              <Link href="/about">About😎</Link>
-            </li>
-            <li className="hover:animate-shake">
-              <Link href="/product">Product🤝</Link>
+              <Link href="/about" onClick={() => setMobileNavOpened(false)}>
+                About😎
+              </Link>
             </li>
           </ul>
           <div
@@ -63,6 +67,23 @@ export default function App({ Component, pageProps }: AppProps) {
         </div>
       </div>
       <Component {...pageProps} />
+      <footer className="lg:px-20 mt-14 px-8 py-8 border-t border-t-gray-700 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit">
+        <div className="text-lg font-medium flex mb-5">
+          <div className="w-7 h-7 mr-2 -mt-0.5">
+            <Image alt="" src={logo} />
+          </div>
+          CAPYIsNotStupid
+        </div>
+        <div className="text-lg font-medium mb-3">Navigations⚓</div>
+        <ul className="grid grid-rows-3 h-full w-full gap-y-2">
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+        </ul>
+      </footer>
     </div>
   );
 }

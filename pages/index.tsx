@@ -61,16 +61,18 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="lg:hidden relative bg-[#bc9364] text-white w-max rounded-full py-2 px-20 mx-auto text-sm">
-            <div className="bg-[#bb9871] w-full h-full rounded-full absolute top-0 left-0 -z-10 blur-xl"></div>
-            <div className="absolute bottom-0 right-14 translate-y-4 w-5 h-7 -rotate-12">
-              <FontAwesomeIcon
-                icon={faHandPointer}
-                className="h-full animate-bounce"
-              />
+          <Link href="/checkout">
+            <div className="lg:hidden relative bg-[#bc9364] text-white w-max rounded-full py-2 px-20 mx-auto text-sm">
+              <div className="bg-[#bb9871] w-full h-full rounded-full absolute top-0 left-0 -z-10 blur-xl"></div>
+              <div className="absolute bottom-0 right-14 translate-y-4 w-5 h-7 -rotate-12">
+                <FontAwesomeIcon
+                  icon={faHandPointer}
+                  className="h-full animate-bounce"
+                />
+              </div>
+              Purchase Now
             </div>
-            Purchase Now
-          </div>
+          </Link>
         </div>
       </div>
       <div className="lg:px-20 lg:mt-32 mt-20 px-8">
@@ -91,7 +93,7 @@ export default function Home() {
             <div className="animate-shake-hands text-7xl mb-5">🤝</div>
             <h3 className="text-xl font-medium mb-3">Great sale deals</h3>
             <p className="">
-              We have a very great deal for our pirce for the game.
+              We have a very great deal for our price for the game.
             </p>
           </div>
           <div className="mx-auto text-center">
@@ -190,26 +192,6 @@ export default function Home() {
           </div>
         </Link>
       </div>
-      <footer className="lg:px-20 mt-14 px-8 py-8 border-t border-t-gray-700 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit">
-        <div className="text-lg font-medium flex mb-5">
-          <div className="w-7 h-7 mr-2 -mt-0.5">
-            <Image alt="" src={logo} />
-          </div>
-          CAPYIsNotStupid
-        </div>
-        <div className="text-lg font-medium mb-3">Navigations⚓</div>
-        <ul className="grid grid-rows-3 h-full w-full gap-y-2">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/product">Product</Link>
-          </li>
-        </ul>
-      </footer>
     </main>
   );
 }
